@@ -1,5 +1,7 @@
 # Author: Patrick A. O'Neil
 
+import numpy as np
+
 class MultiParameterCube(object):
     def __init__(self, nparams, dim):
         self.dim = dim
