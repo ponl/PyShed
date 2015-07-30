@@ -1,2 +1,2 @@
 # PyShed
-Persistence watershed implemented in python.
+Persistence watershed implemented in python. This class allows you to perform watershed segmentation on a three dimensional NumPy array. The initial segmentation (computed by calling .train()) does a fine segmentation. To produce coarser segmentations, simply call apply_threshold and specify the desired persistence threshold. Any labels whose persistence is less than the threshold, will be merged with an adjacent label according to a merge tree.
